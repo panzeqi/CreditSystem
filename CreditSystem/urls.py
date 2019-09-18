@@ -15,7 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from creditmanagement import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('page1/',views.page1)
 ]
